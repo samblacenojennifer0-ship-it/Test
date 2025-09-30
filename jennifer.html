@@ -3,8 +3,9 @@
 <head>
     <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  </title>Jennifer L. Samblaceno - Portfolio</title>
+  <title>Jennifer L. Samblaceno - Portfolio</title>
   <link rel="stylesheet" href="jennifer.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -13,9 +14,12 @@
     <p>Welcome to my Personal Vlog & Portfolio</p>
   </header>
 
-  <div class="home-button-container">
-    <a href="index.html" class="btn">Back to Home</a>
-  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="Blog.html">Blog</a>
+    <a href="jennifer.html">jen</a>
+    <a href="about.html">About Us</a>
+  </nav>
 
   <main>
     <div class="card">
@@ -55,7 +59,7 @@
       <p><b>JHS:</b> Aborlan National High School</p>
     </div>
     
-    <div class="card">
+    <div class="card" id="contact">
       <h2>Contact & Accounts</h2>
       <p><b>Phone:</b> 09671458100</p>
       <p><b>Email:</b> <a href="mailto:samblacenojennifer0@gmail.com">samblacenojennifer0@gmail.com</a></p>
@@ -66,7 +70,7 @@
   <script>
     function toggleInfo(id) {
       const element = document.getElementById(id);
-      element.style.display = element.style.display === "block" ? "none" : "block";
+      element.classList.toggle("hidden");
     }
   </script>
   <script src="main.js" defer></script>
