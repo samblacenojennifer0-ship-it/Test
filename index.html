@@ -33,35 +33,47 @@
 
     <div class="card">
       <h2>Personal Details</h2>
-      <p><a onclick="toggleInfo('birthday')">Birthday</a></p>
-      <div id="birthday" class="hidden">October 26, 2001</div>
+      <div class="info">
+        <p><a onclick="toggleInfo('birthday')">Birthday</a></p>
+        <div id="birthday" class="hidden">October 26, 2001</div>
 
-      <p><a onclick="toggleInfo('birthplace')">Birthplace</a></p>
-      <div id="birthplace" class="hidden">San Juan Aborlan, Palawan</div>
+        <p><a onclick="toggleInfo('birthplace')">Birthplace</a></p>
+        <div id="birthplace" class="hidden">San Juan Aborlan, Palawan</div>
 
-      <p><a onclick="toggleInfo('hobbies')">Hobbies</a></p>
-      <div id="hobbies" class="hidden">Cooking</div>
+        <p><a onclick="toggleInfo('hobbies')">Hobbies</a></p>
+        <div id="hobbies" class="hidden">Cooking</div>
 
-      <p><a onclick="toggleInfo('color')">Favorite Colors</a></p>
-      <div id="color" class="hidden">Sky Blue</div>
+        <p><a onclick="toggleInfo('color')">Favorite Colors</a></p>
+        <div id="color" class="hidden">Sky Blue</div>
+      </div>
     </div>
 
 
     <div class="card">
       <h2>Education</h2>
-      <p><b>College:</b> Fullbright College (First Year)</p>
-      <p><b>SHS:</b> Center for Positive Futures</p>
-      <p><b>JHS:</b> Aborlan National High School</p>
+      <div class="info">
+        <p><b>College:</b> Fullbright College (First Year)</p>
+        <p><b>SHS:</b> Center for Positive Futures</p>
+        <p><b>JHS:</b> Aborlan National High School</p>
+      </div>
     </div>
 
     <div class="card" id="contact">
       <h2>Contact & Accounts</h2>
-      <p><b>Phone:</b> 09671458100</p>
-      <p><b>Email:</b> <a href="mailto:samblacenojennifer0@gmail.com">samblacenojennifer0@gmail.com</a></p>
-      <p><b>Address:</b> Brgy. San Pedro Libis., Puerto Princesa, Palawan</p>
+      <div class="info">
+        <p><b>Phone:</b> 09671458100</p>
+        <p><b>Email:</b> <a href="mailto:samblacenojennifer0@gmail.com">samblacenojennifer0@gmail.com</a></p>
+        <p><b>Address:</b> Brgy. San Pedro Libis., Puerto Princesa, Palawan</p>
+      </div>
     </div>
   </main>
 
+  <script>
+    function toggleInfo(id) {
+      const element = document.getElementById(id);
+      element.classList.toggle("hidden");
+    }
+  </script>
 </body>
 
 </html>

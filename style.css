@@ -11,17 +11,6 @@ body {
       padding: 30px;
       text-align: center;
     }
-    nav {
-        padding: 15px;
-        text-align: center;
-        background: #f1f1f1;
-    }
-    nav a {
-        margin: 0 15px;
-        text-decoration: none;
-        color: #2575fc;
-        font-weight: bold;
-    }
     main {
       display: flex;
       flex-wrap: wrap;
@@ -65,4 +54,22 @@ body {
     }
     .hidden {
       display: none;
+    }
+    .card p a {
+      cursor: pointer;
+      color: #2575fc;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 4px 8px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+    .card p a:hover {
+      background-color: #e3f2fd;
+      color: #1a5cc2;
+      text-decoration: underline;
+      box-shadow: 0 2px 8px rgba(37, 117, 252, 0.2);
+    }
+    .card p a:active {
+      transform: scale(0.98);
     }
