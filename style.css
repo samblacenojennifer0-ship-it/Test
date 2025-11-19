@@ -1,4 +1,4 @@
-    body {
+body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
@@ -36,6 +36,11 @@
       width: 80%;
       max-width: 800px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 24px;
+      transition: box-shadow 0.3s;
+    }
+    .card:hover {
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
     }
     .card h2 {
       color: #2575fc;
@@ -43,4 +48,21 @@
       font-size: 1.5em;
       border-bottom: 2px solid #eee;
       padding-bottom: 5px;
+    }
+    .profile-img {
+      width: 160px;
+      height: auto;
+      border-radius: 12px;
+      display: block;
+      margin: 0 auto 16px auto;
+    }
+    .info {
+      margin-top: 10px;
+      padding-left: 10px;
+      border-left: 3px solid #2575fc;
+      background: #f5faff;
+      border-radius: 6px;
+    }
+    .hidden {
+      display: none;
     }
